@@ -21,8 +21,8 @@ public struct ObjectStruct
 
     public int Capacity
     {
-        get { return Mathf.Max(0, capacity); }
-        set { capacity = Mathf.Max(0, value); }
+        get { return Mathf.Abs(capacity); }
+        set { capacity = Mathf.Abs(value); }
     }
 }
 
